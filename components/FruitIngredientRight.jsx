@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../components/FruitIngredientLeft.module.css";
+import styles from "../components/FruitIngredientRight.module.css";
 
 export default function FruitIngredients(props) {
   return (
