@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import FruitIngredients from "../components/FruitIngredient";
+import FruitIngredientLeft from "../components/FruitIngredientLeft";
+import FruitIngredientRight from "../components/FruitIngredientRight";
 
 export default function Home() {
   return (
@@ -15,30 +16,30 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.mix}>
           <div className={styles.ingredients}>
-            <FruitIngredients
+            <FruitIngredientLeft
               fruitName="Pineapple"
               imageSource="/images/fruits/mixhue_pineapple.svg"
             />
-            <FruitIngredients
+            <FruitIngredientLeft
               fruitName="Berries"
               imageSource="/images/fruits/mixhue_berries.svg"
             />
-            <FruitIngredients
+            <FruitIngredientLeft
               fruitName="Kiwi"
               imageSource="/images/fruits/mixhue_kiwi.svg"
             />
           </div>
           <Image src="/images/elements/mixer.svg" alt="Fruit mixer" width={240} height={520}/>
           <div className={styles.ingredients}>
-            <FruitIngredients
+            <FruitIngredientRight
               fruitName="Strawberries"
               imageSource="/images/fruits/mixhue_strawberries.svg"
             />
-            <FruitIngredients
+            <FruitIngredientRight
               fruitName="Orange"
               imageSource="/images/fruits/mixhue_orange.svg"
             />
-            <FruitIngredients
+            <FruitIngredientRight
               fruitName="Raspberries"
               imageSource="/images/fruits/mixhue_raspberry.svg"
             />
