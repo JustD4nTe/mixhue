@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import FruitIngredientLeft from "../components/FruitIngredientLeft";
 import FruitIngredientRight from "../components/FruitIngredientRight";
 import Mixer from "../components/Mixer";
+import ButtonMix from "../components/ButtonMix";
 
 export default function Home() {
   return (
@@ -30,8 +31,7 @@ export default function Home() {
               imageSource="/images/fruits/mixhue_kiwi.svg"
             />
           </div>
-          <Mixer imageSource="/images/elements/mixer.svg"
-          />
+          <Mixer imageSource="/images/elements/mixer.svg" />
           <div className={styles.ingredients}>
             <FruitIngredientRight
               fruitName="Strawberries"
@@ -47,6 +47,7 @@ export default function Home() {
             />
           </div>
         </div>
+        <ButtonMix />
       </main>
 
       <footer className={styles.footer}>

@@ -3,12 +3,13 @@
 :root {
   --main-dark-grey: #42493f;
   --main-white: #ffffff;
+  --main-dark-yellow: #f9d438;
+  font-family: Jura;
 }
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Jura;
 }
 
 a {
