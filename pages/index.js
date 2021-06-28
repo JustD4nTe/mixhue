@@ -16,6 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+      <h1 className={styles.title}>Mix your ingredients</h1>
         <div className={styles.mix}>
           <div className={styles.ingredients}>
             <FruitIngredientLeft
