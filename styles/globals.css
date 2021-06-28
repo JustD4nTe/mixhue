@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
 
+:root {
+  --main-dark-grey: #42493F;
+}
 html,
 body {
   padding: 0;
