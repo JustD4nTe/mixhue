@@ -23,9 +23,13 @@
   flex-grow: 1;
 }
 
-.logo {
+.github {
   display: flex;
   align-items: center;
+}
+
+.githubName {
+  margin-left: 8px;
 }
 
 @media (max-width: 600px) {

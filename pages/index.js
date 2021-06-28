@@ -29,7 +29,12 @@ export default function Home() {
               imageSource="/images/fruits/mixhue_kiwi.svg"
             />
           </div>
-          <Image src="/images/elements/mixer.svg" alt="Fruit mixer" width={240} height={520}/>
+          <Image
+            src="/images/elements/mixer.svg"
+            alt="Fruit mixer"
+            width={240}
+            height={520}
+          />
           <div className={styles.ingredients}>
             <FruitIngredientRight
               fruitName="Strawberries"
@@ -53,10 +58,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Github Logo" width={72} height={16} />
-          </span>{" "}
-          Github
+          <span className={styles.github}>
+            <Image src="/github_logo.png" alt="Github Logo" width={20} height={20} />
+            <span className={styles.githubName}>Github</span>
+          </span>
         </a>
       </footer>
     </div>
