@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import FruitIngredientLeft from "../components/FruitIngredientLeft";
 import FruitIngredientRight from "../components/FruitIngredientRight";
+import Mixer from "../components/Mixer";
 
 export default function Home() {
   return (
@@ -29,11 +30,7 @@ export default function Home() {
               imageSource="/images/fruits/mixhue_kiwi.svg"
             />
           </div>
-          <Image
-            src="/images/elements/mixer.svg"
-            alt="Fruit mixer"
-            width={240}
-            height={520}
+          <Mixer imageSource="/images/elements/mixer.svg"
           />
           <div className={styles.ingredients}>
             <FruitIngredientRight
