@@ -13,12 +13,37 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <FruitIngredients fruitName="Pineapple" imageSource="/images/fruits/mixhue_pineapple.svg"  />
-        <FruitIngredients fruitName="Berries" imageSource="/images/fruits/mixhue_berries.svg"  />
-        <FruitIngredients fruitName="Kiwi" imageSource="/images/fruits/mixhue_kiwi.svg"  />
-        <FruitIngredients fruitName="Strawberries" imageSource="/images/fruits/mixhue_strawberries.svg"  />
-        <FruitIngredients fruitName="Orange" imageSource="/images/fruits/mixhue_orange.svg"  />
-        <FruitIngredients fruitName="Raspberries" imageSource="/images/fruits/mixhue_raspberry.svg"  />
+        <div className={styles.mix}>
+          <div className={styles.ingredients}>
+            <FruitIngredients
+              fruitName="Pineapple"
+              imageSource="/images/fruits/mixhue_pineapple.svg"
+            />
+            <FruitIngredients
+              fruitName="Berries"
+              imageSource="/images/fruits/mixhue_berries.svg"
+            />
+            <FruitIngredients
+              fruitName="Kiwi"
+              imageSource="/images/fruits/mixhue_kiwi.svg"
+            />
+          </div>
+          <Image src="/images/elements/mixer.svg" alt="Fruit mixer" width={240} height={520}/>
+          <div className={styles.ingredients}>
+            <FruitIngredients
+              fruitName="Strawberries"
+              imageSource="/images/fruits/mixhue_strawberries.svg"
+            />
+            <FruitIngredients
+              fruitName="Orange"
+              imageSource="/images/fruits/mixhue_orange.svg"
+            />
+            <FruitIngredients
+              fruitName="Raspberries"
+              imageSource="/images/fruits/mixhue_raspberry.svg"
+            />
+          </div>
+        </div>
       </main>
 
       <footer className={styles.footer}>

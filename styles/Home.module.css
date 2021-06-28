@@ -23,9 +23,19 @@
   flex-grow: 1;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+.mix {
+  display: flex;
+  align-items: center;
 }
