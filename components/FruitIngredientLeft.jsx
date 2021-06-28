@@ -9,7 +9,12 @@ export default function FruitIngredients(props) {
       <span className={`${styles.buttonName} ${stylesIngredient.buttonName}`}>
         {props.fruitName}
       </span>
-      <Image src={props.imageSource} alt="" width={120} height={120} />
+      <Image
+        src={`/images/fruits/${props.fruitName}.svg`}
+        alt=""
+        width={120}
+        height={120}
+      />
     </button>
   );
 }

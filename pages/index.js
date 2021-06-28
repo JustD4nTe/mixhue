@@ -16,35 +16,29 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      <h1 className={styles.title}>Mix your ingredients</h1>
+        <h1 className={styles.title}>Mix your ingredients</h1>
         <div className={styles.mix}>
           <div className={styles.ingredients}>
             <FruitIngredientLeft
-              fruitName="Pineapple"
-              imageSource="/images/fruits/mixhue_pineapple.svg"
+              fruitName="pineapple"
             />
             <FruitIngredientLeft
-              fruitName="Berries"
-              imageSource="/images/fruits/mixhue_berries.svg"
+              fruitName="berries"
             />
             <FruitIngredientLeft
-              fruitName="Kiwi"
-              imageSource="/images/fruits/mixhue_kiwi.svg"
+              fruitName="kiwi"
             />
           </div>
           <Mixer imageSource="/images/elements/mixer.svg" />
           <div className={styles.ingredients}>
             <FruitIngredientRight
-              fruitName="Strawberries"
-              imageSource="/images/fruits/mixhue_strawberries.svg"
+              fruitName="strawberries"
             />
             <FruitIngredientRight
-              fruitName="Orange"
-              imageSource="/images/fruits/mixhue_orange.svg"
+              fruitName="orange"
             />
             <FruitIngredientRight
-              fruitName="Raspberries"
-              imageSource="/images/fruits/mixhue_raspberry.svg"
+              fruitName="raspberries"
             />
           </div>
         </div>

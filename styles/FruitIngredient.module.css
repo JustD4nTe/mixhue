@@ -16,4 +16,5 @@
   font-weight: 700;
   line-height: 28px;
   color: var(--main-dark-grey);
+  text-transform: capitalize;
 }
