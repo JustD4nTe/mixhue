@@ -16,7 +16,7 @@ export default function Mixer(props) {
           {props.fruitsInMixer[2] != null && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[2]}.svg`}
-              alt=""
+              alt={`${props.fruitsInMixer[2]} in mixer`}
               width={100}
               height={100}
             />
@@ -26,7 +26,7 @@ export default function Mixer(props) {
           {props.fruitsInMixer[1] != null && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[1]}.svg`}
-              alt=""
+              alt={`${props.fruitsInMixer[1]} in mixer`}
               width={100}
               height={100}
             />
@@ -37,7 +37,7 @@ export default function Mixer(props) {
           {props.fruitsInMixer[0] != null && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[0]}.svg`}
-              alt=""
+              alt={`${props.fruitsInMixer[0]} in mixer`}
               width={100}
               height={100}
             />
