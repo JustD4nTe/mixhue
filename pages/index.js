@@ -10,7 +10,7 @@ import { parse, average, formatHex } from "culori";
 
 export default function Home() {
   const [fruitsInMixer, setFruitsInMixer] = React.useState([null, null, null]);
-  const [fluidColor, setFluidColor] = React.useState("#FFF");
+  const [fluidColor, setFluidColor] = React.useState();
 
   const [fruitId, setFruitId] = React.useState(0);
 
