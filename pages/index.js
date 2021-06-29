@@ -5,12 +5,20 @@ import FruitIngredientLeft from "../components/FruitIngredientLeft";
 import FruitIngredientRight from "../components/FruitIngredientRight";
 import Mixer from "../components/Mixer";
 import ButtonMix from "../components/ButtonMix";
-import React from 'react'
+import React from "react";
 
 export default function Home() {
-  const [fruitsInMixer, setFruitsInMixer] = React.useState([]);
-  
-  var addFruit = (newFruit) => setFruitsInMixer([...fruitsInMixer, newFruit]);
+  const [fruitsInMixer, setFruitsInMixer] = React.useState([null, null, null]);
+
+  const [fruitId, setFruitId] = React.useState(0);
+
+  var addFruit = (newFruit) => {
+    fruitsInMixer[fruitId] = newFruit;
+    setFruitsInMixer([...fruitsInMixer]);
+
+    // we can mix only 3 ingredients
+    setFruitId((fruitId + 1) % 3);
+  };
 
   return (
     <div className={styles.container}>
@@ -28,7 +36,7 @@ export default function Home() {
             <FruitIngredientLeft fruitName="berries" addFruit={addFruit} />
             <FruitIngredientLeft fruitName="kiwi" addFruit={addFruit} />
           </div>
-          <Mixer fruitsInMixer={fruitsInMixer}/>
+          <Mixer fruitsInMixer={fruitsInMixer} />
           <div className={styles.ingredients}>
             <FruitIngredientRight
               fruitName="strawberries"

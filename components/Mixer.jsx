@@ -13,7 +13,7 @@ export default function Mixer(props) {
       />
       <div className={styles.insideMixer}>
         <div className={`${styles.thirdFruit} ${styles.fruitInMixer}`}>
-          {props.fruitsInMixer[2] != undefined && (
+          {props.fruitsInMixer[2] != null && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[2]}.svg`}
               alt=""
@@ -23,7 +23,7 @@ export default function Mixer(props) {
           )}
         </div>
         <div className={`${styles.secondFruit} ${styles.fruitInMixer}`}>
-          {props.fruitsInMixer[1] != undefined && (
+          {props.fruitsInMixer[1] != null && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[1]}.svg`}
               alt=""
@@ -34,7 +34,7 @@ export default function Mixer(props) {
         </div>
 
         <div className={`${styles.firstFruit} ${styles.fruitInMixer}`}>
-          {props.fruitsInMixer[0] != undefined && (
+          {props.fruitsInMixer[0] != null && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[0]}.svg`}
               alt=""
