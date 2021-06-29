@@ -33,10 +33,16 @@ export default function Home() {
 
   var changeFluidColor = () => {
     let colors = [];
+    // get all colors to mix
     fruitsInMixer.forEach((fruit) => {
       colors.push(parse(ingredientsColors[fruit]));
     });
 
+    // clear while mixing
+    setFruitsInMixer([null, null, null]);
+    setFruitId(0);
+
+    // mix colors
     setFluidColor(formatHex(average(colors)));
   };
 
