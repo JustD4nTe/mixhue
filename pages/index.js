@@ -29,7 +29,7 @@ export default function Home() {
               fruitName="kiwi"
             />
           </div>
-          <Mixer imageSource="/images/elements/mixer.svg" />
+          <Mixer />
           <div className={styles.ingredients}>
             <FruitIngredientRight
               fruitName="strawberries"

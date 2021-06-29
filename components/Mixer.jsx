@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "../components/Mixer.module.css";
 
-export default function Mixer(props) {
+export default function Mixer() {
   return (
     <div className={styles.mixer}>
       <Image
