@@ -3,6 +3,22 @@
     height: 500px;
 }
 
+.fluidContainer{
+    position: relative;
+    height: 0px;
+    width: 0px
+}
+
+.fluid {
+    mask: url("/images/elements/mixer.svg");
+    mask-position: -10px 400px;
+    position: relative;
+    top: -400px;
+    left: 10px;
+    width: 220px;
+    height: 215px;
+}
+
 .insideMixer{
     position: relative;
     height: 280px;

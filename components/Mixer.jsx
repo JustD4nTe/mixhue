@@ -11,9 +11,17 @@ export default function Mixer(props) {
         width={240}
         height={520}
       />
+      <div className={styles.fluidContainer}>
+        {props.fluidColor && (
+          <div
+            className={styles.fluid}
+            style={{ backgroundColor: `${props.fluidColor}` }}
+          />
+        )}
+      </div>
       <div className={styles.insideMixer}>
         <div className={`${styles.thirdFruit} ${styles.fruitInMixer}`}>
-          {props.fruitsInMixer[2] != null && (
+          {props.fruitsInMixer[2] && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[2]}.svg`}
               alt={`${props.fruitsInMixer[2]} in mixer`}
@@ -23,7 +31,7 @@ export default function Mixer(props) {
           )}
         </div>
         <div className={`${styles.secondFruit} ${styles.fruitInMixer}`}>
-          {props.fruitsInMixer[1] != null && (
+          {props.fruitsInMixer[1] && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[1]}.svg`}
               alt={`${props.fruitsInMixer[1]} in mixer`}
@@ -34,7 +42,7 @@ export default function Mixer(props) {
         </div>
 
         <div className={`${styles.firstFruit} ${styles.fruitInMixer}`}>
-          {props.fruitsInMixer[0] != null && (
+          {props.fruitsInMixer[0] && (
             <Image
               src={`/images/fruits/${props.fruitsInMixer[0]}.svg`}
               alt={`${props.fruitsInMixer[0]} in mixer`}
