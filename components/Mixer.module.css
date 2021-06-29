@@ -1,3 +1,32 @@
 .mixer{
     margin: 48px 120px;
+    height: 500px;
+}
+
+.insideMixer{
+    position: relative;
+    height: 280px;
+    width: 220px;
+    top: -465px;
+    left: 10px
+}
+
+.fruitInMixer{
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.firstFruit{
+    top: -20px;
+    left: 90px;
+}
+
+.secondFruit{
+    top: -5px;
+    left: 20px;
+}
+
+.thirdFruit{
+    left: 75px;
 }
