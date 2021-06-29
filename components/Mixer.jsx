@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "../components/Mixer.module.css";
 
-export default function Mixer() {
+export default function Mixer(props) {
   return (
     <div className={styles.mixer}>
       <Image
@@ -13,29 +13,35 @@ export default function Mixer() {
       />
       <div className={styles.insideMixer}>
         <div className={`${styles.thirdFruit} ${styles.fruitInMixer}`}>
-          <Image
-            src={`/images/fruits/kiwi.svg`}
-            alt=""
-            width={100}
-            height={100}
-          />
+          {props.fruitsInMixer[2] != undefined && (
+            <Image
+              src={`/images/fruits/${props.fruitsInMixer[2]}.svg`}
+              alt=""
+              width={100}
+              height={100}
+            />
+          )}
         </div>
         <div className={`${styles.secondFruit} ${styles.fruitInMixer}`}>
-          <Image
-            src={`/images/fruits/kiwi.svg`}
-            alt=""
-            width={100}
-            height={100}
-          />
+          {props.fruitsInMixer[1] != undefined && (
+            <Image
+              src={`/images/fruits/${props.fruitsInMixer[1]}.svg`}
+              alt=""
+              width={100}
+              height={100}
+            />
+          )}
         </div>
 
         <div className={`${styles.firstFruit} ${styles.fruitInMixer}`}>
-          <Image
-            src={`/images/fruits/kiwi.svg`}
-            alt=""
-            width={100}
-            height={100}
-          />
+          {props.fruitsInMixer[0] != undefined && (
+            <Image
+              src={`/images/fruits/${props.fruitsInMixer[0]}.svg`}
+              alt=""
+              width={100}
+              height={100}
+            />
+          )}
         </div>
       </div>
     </div>

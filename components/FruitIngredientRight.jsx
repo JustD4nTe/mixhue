@@ -5,7 +5,10 @@ import stylesIngredient from "../components/FruitIngredientRight.module.css";
 
 export default function FruitIngredientsRight(props) {
   return (
-    <button className={`${styles.buttonFruit} ${stylesIngredient.buttonFruit}`}>
+    <button
+      className={`${styles.buttonFruit} ${stylesIngredient.buttonFruit}`}
+      onClick={() => props.addFruit(props.fruitName)}
+    >
       <Image
         src={`/images/fruits/${props.fruitName}.svg`}
         alt=""
