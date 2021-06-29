@@ -27,8 +27,16 @@ export default function Home() {
         <meta name="description" content="Mixhue" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
+        <div className={styles.header}>
+          <Image
+            className={styles.logo}
+            src="/images/logo.png"
+            alt="MixHue Logo"
+            width={144}
+            height={47}
+          />
+        </div>
         <h1 className={styles.title}>Mix your ingredients</h1>
         <div className={styles.mix}>
           <div className={styles.ingredients}>
@@ -38,10 +46,7 @@ export default function Home() {
           </div>
           <Mixer fruitsInMixer={fruitsInMixer} />
           <div className={styles.ingredients}>
-            <FruitIngredientRight
-              fruitName="strawberries"
-              addFruit={addFruit}
-            />
+            <FruitIngredientRight fruitName="strawberries" addFruit={addFruit} />
             <FruitIngredientRight fruitName="orange" addFruit={addFruit} />
             <FruitIngredientRight fruitName="raspberries" addFruit={addFruit} />
           </div>
@@ -56,12 +61,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <span className={styles.github}>
-            <Image
-              src="/github_logo.png"
-              alt="Github Logo"
-              width={20}
-              height={20}
-            />
+            <Image src="/github_logo.png" alt="Github Logo" width={20} height={20} />
             <span className={styles.githubName}>Github</span>
           </span>
         </a>
