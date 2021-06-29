@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/FruitIngredient.module.css";
 import stylesIngredient from "../components/FruitIngredientRight.module.css";
 
-export default function FruitIngredients(props) {
+export default function FruitIngredientsRight(props) {
   return (
     <button className={`${styles.buttonFruit} ${stylesIngredient.buttonFruit}`}>
       <Image
