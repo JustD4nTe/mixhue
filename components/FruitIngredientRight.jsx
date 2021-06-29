@@ -14,6 +14,7 @@ export default function FruitIngredientsRight(props) {
         alt=""
         width={120}
         height={120}
+        className={styles.imageFruit}
       />
       <span className={`${styles.buttonName} ${stylesIngredient.buttonName}`}>
         {props.fruitName}
