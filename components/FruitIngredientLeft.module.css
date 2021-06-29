@@ -1,0 +1,10 @@
+.buttonFruit {
+  justify-content: flex-end;
+  background-image: url("/images/elements/button_ingredient_background_2.svg");
+  padding-right: 24px;
+}
+
+.buttonName {
+  margin-right: 16px;
+}
+

@@ -1,0 +1,9 @@
+.buttonFruit {
+  justify-content: flex-start;
+  background-color: var(--main-white);
+  background-image: url("/images/elements/button_ingredient_background.svg");
+}
+
+.buttonName{
+  margin-left: 16px;
+}

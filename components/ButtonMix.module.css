@@ -1,0 +1,16 @@
+.buttonMix {
+  font-family: Jura;
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  padding: 16px 144px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--main-dark-yellow);
+  background-image: url("/images/elements/button_background.svg");
+}
+
+.buttonMix:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
