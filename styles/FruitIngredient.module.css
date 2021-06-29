@@ -28,3 +28,7 @@
 .buttonFruit:hover .buttonName {
   transform: translateY(-6px);
 }
+
+.buttonFruit:active .imageFruit {
+  transform: scale(1.2) rotate(60deg);
+}
