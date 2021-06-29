@@ -11,6 +11,7 @@ export default function Mixer(props) {
         width={240}
         height={520}
       />
+      <div className={styles.fluid} style={{backgroundColor: `${props.fluidColor}`}}>saf</div>
       <div className={styles.insideMixer}>
         <div className={`${styles.thirdFruit} ${styles.fruitInMixer}`}>
           {props.fruitsInMixer[2] != null && (

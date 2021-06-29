@@ -6,11 +6,22 @@ import FruitIngredientRight from "../components/FruitIngredientRight";
 import Mixer from "../components/Mixer";
 import ButtonMix from "../components/ButtonMix";
 import React from "react";
+import { parse, average, formatHex } from "culori";
 
 export default function Home() {
   const [fruitsInMixer, setFruitsInMixer] = React.useState([null, null, null]);
+  const [fluidColor, setFluidColor] = React.useState("#FFF");
 
   const [fruitId, setFruitId] = React.useState(0);
+
+  const ingredientsColors = {
+    berries: "#634A84",
+    kiwi: "#8CC275",
+    orange: "#FF8C5A",
+    pineapple: "#F9D438",
+    raspberries: "#EF6596",
+    strawberries: "#E94444",
+  };
 
   var addFruit = (newFruit) => {
     fruitsInMixer[fruitId] = newFruit;
@@ -18,6 +29,15 @@ export default function Home() {
 
     // we can mix only 3 ingredients
     setFruitId((fruitId + 1) % 3);
+  };
+
+  var changeFluidColor = () => {
+    let colors = [];
+    fruitsInMixer.forEach((fruit) => {
+      colors.push(parse(ingredientsColors[fruit]));
+    });
+
+    setFluidColor(formatHex(average(colors)));
   };
 
   return (
@@ -36,7 +56,7 @@ export default function Home() {
             <FruitIngredientLeft fruitName="berries" addFruit={addFruit} />
             <FruitIngredientLeft fruitName="kiwi" addFruit={addFruit} />
           </div>
-          <Mixer fruitsInMixer={fruitsInMixer} />
+          <Mixer fruitsInMixer={fruitsInMixer} fluidColor={fluidColor} />
           <div className={styles.ingredients}>
             <FruitIngredientRight
               fruitName="strawberries"
@@ -46,7 +66,7 @@ export default function Home() {
             <FruitIngredientRight fruitName="raspberries" addFruit={addFruit} />
           </div>
         </div>
-        <ButtonMix />
+        <ButtonMix changeFluidColor={changeFluidColor} />
       </main>
 
       <footer className={styles.footer}>
