@@ -1,10 +1,31 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../components/Mixer.module.css";
+import { useSpring, animated } from "react-spring";
 
 export default function Mixer(props) {
+  const shakeStyle = useSpring({
+    from: {
+      rotateZ: 0,
+    },
+    to: [
+      { rotateZ: -15 },
+      { rotateZ: 15 },
+      { rotateZ: -15 },
+      { rotateZ: 15 },
+      { rotateZ: -15 },
+      { rotateZ: 15 },
+      { rotateZ: -15 },
+      { rotateZ: 15 },
+      { rotateZ: 0 },
+    ],
+  });
+
   return (
-    <div className={styles.mixer}>
+    <animated.div
+      className={styles.mixer}
+      style={props.shakeMixer ? shakeStyle : null}
+    >
       <Image
         src="/images/elements/mixer.svg"
         alt="Mixer with juice"
@@ -52,6 +73,6 @@ export default function Mixer(props) {
           )}
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 }
