@@ -18,3 +18,17 @@
   color: var(--main-dark-grey);
   text-transform: capitalize;
 }
+
+.buttonFruit .imageFruit,
+.buttonFruit .buttonName {
+  transition: transform 250ms;
+}
+
+.buttonFruit:hover .imageFruit,
+.buttonFruit:hover .buttonName {
+  transform: translateY(-6px);
+}
+
+.buttonFruit:active .imageFruit {
+  transform: scale(1.2) rotate(60deg);
+}

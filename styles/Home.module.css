@@ -1,19 +1,21 @@
 .main {
-  padding: 5rem 0;
+  padding: 2em 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 100vh;
 }
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: 64px;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 32px;
 }
 
 .footer a {
@@ -42,8 +44,10 @@
 .mix {
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 h1.title {
-  font-size: 32px;
+  font-size: 38px;
+  cursor: default;
 }
