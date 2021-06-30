@@ -9,6 +9,7 @@ export default function Mixer(props) {
       rotateZ: 0,
     },
     to: [
+      { rotateZ: 0 },
       { rotateZ: -15 },
       { rotateZ: 15 },
       { rotateZ: -15 },

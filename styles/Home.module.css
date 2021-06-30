@@ -44,10 +44,10 @@
 .mix {
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 h1.title {
   font-size: 38px;
   cursor: default;
 }
-
