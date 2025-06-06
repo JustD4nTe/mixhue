@@ -1,48 +1,58 @@
-.mixer{
-    margin: 48px 120px;
-    height: 500px;
+@keyframes wave {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.fluidContainer{
-    position: relative;
-    height: 0px;
-    width: 0px
+.mixer {
+  margin: 32px 120px;
+  height: 500px;
+}
+
+.fluidContainer {
+  position: relative;
+  height: 0px;
+  width: 0px;
 }
 
 .fluid {
-    mask: url("/images/elements/mixer.svg");
-    mask-position: -10px 400px;
-    position: relative;
-    top: -400px;
-    left: 10px;
-    width: 220px;
-    height: 215px;
+  mask: url("/images/elements/mixer.svg");
+  mask-position: -10px 400px;
+  position: relative;
+  top: -400px;
+  left: 10px;
+  width: 220px;
+  height: 215px;
+  animation: wave 5s;
 }
 
-.insideMixer{
-    position: relative;
-    height: 280px;
-    width: 220px;
-    top: -465px;
-    left: 10px
+.insideMixer {
+  position: relative;
+  height: 280px;
+  width: 220px;
+  top: -465px;
+  left: 10px;
 }
 
-.fruitInMixer{
-    height: 100px;
-    width: 100px;
-    position: relative;
+.fruitInMixer {
+  height: 100px;
+  width: 100px;
+  position: relative;
 }
 
-.firstFruit{
-    top: -20px;
-    left: 90px;
+.firstFruit {
+  top: -20px;
+  left: 90px;
 }
 
-.secondFruit{
-    top: -5px;
-    left: 20px;
+.secondFruit {
+  top: -5px;
+  left: 20px;
 }
 
-.thirdFruit{
-    left: 75px;
+.thirdFruit {
+  left: 75px;
 }

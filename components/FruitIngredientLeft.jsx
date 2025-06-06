@@ -17,6 +17,7 @@ export default function FruitIngredientsLeft(props) {
         alt=""
         width={120}
         height={120}
+        className={styles.imageFruit}
       />
     </button>
   );
